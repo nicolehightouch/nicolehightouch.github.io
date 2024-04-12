@@ -5,5 +5,15 @@
 <h1>Nicole Hightouch Event Testing</h1>
 <p>Hello World.</p>
 
+  <script> var button = document.getElementById("myButton");
+    button.addEventListener("click", function() {
+      // Track the button click event 
+      htevents.track('Button Clicked', {
+        button: 'first button',
+        order: 'first'
+      });
+    });
+</script>
+
 </body>
 </html>
